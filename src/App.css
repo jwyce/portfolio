@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+body {
+	background: black;
+	color: white;
+	font-family: 'Inconsolata', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.d {
+	text-decoration: none;
+	position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.d::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	bottom: -3px;
+	left: 0;
+	background-color: currentColor;
+	transform: scaleX(0);
+	transition: transform 0.5s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.d:hover::before {
+	transform: scaleX(1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.d:hover {
+	cursor: pointer;
+}
+
+a,
+a:active,
+a:visited {
+	color: #949494;
+	text-decoration: none;
+	position: relative;
+}
+
+a::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	bottom: -3px;
+	left: 0;
+	background-color: #949494;
+	transform: scaleX(0);
+	transition: transform 0.5s ease;
+}
+
+a:hover::before {
+	transform: scaleX(1);
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.project {
+	position: relative;
+}
+
+.project-image {
+	margin: 10px;
+	min-width: 250px;
+	max-width: 350px;
+	height: 250px;
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+	background-size: 100% 100%;
+	position: relative;
+	box-shadow: 0 0 0 1000px inset #0000008f, 0 0 45px 0 inset black;
+	border-radius: 20px;
+	background-position: center;
+	cursor: pointer;
+	transition: background-size 0.2s ease-in;
+}
+
+.project-image:hover {
+	background-size: 120% 120%;
+}
+
+.project-title {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 15px;
+	right: 0;
+	left: 0;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+
+.skill-container {
+	text-align: center;
+	margin: 5em;
+	padding: 5em;
+	border-radius: 1em;
 }
