@@ -1,12 +1,15 @@
 import './App.css';
 
 import dayjs from 'dayjs';
+import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
+
 import koiImage from './assets/koi.png';
-import rubikImage from './assets/rubik.svg';
 import portfolioImage from './assets/portfolio.svg';
+import rubikImage from './assets/rubik.svg';
 
 const YEAR_MILLIS = 1000 * 60 * 60 * 24 * 365;
+
 enum Skill {
 	NODE = 'node',
 	REACT = 'react',
@@ -17,12 +20,13 @@ enum Skill {
 
 export const App: React.FC = () => {
 	const [age, setAge] = useState(
-		dayjs().diff(dayjs('1997-06-17', 'year', true)) / YEAR_MILLIS
+		dayjs().diff(dayjs('2019-06-10', 'year', true)) / YEAR_MILLIS
 	);
 	const [skill, setSkill] = useState(Skill.NONE);
+	const controls = useAnimation();
 
 	const refreshAge = () => {
-		setAge(dayjs().diff(dayjs('1997-06-17', 'year', true)) / YEAR_MILLIS);
+		setAge(dayjs().diff(dayjs('2019-06-10', 'year', true)) / YEAR_MILLIS);
 	};
 
 	useEffect(() => {
@@ -32,23 +36,77 @@ export const App: React.FC = () => {
 		};
 	}, []);
 
-	let skillSection = <></>;
+	useEffect(() => {
+		controls.start({
+			scale: 1,
+			transition: {
+				type: 'spring',
+				velocity: 5,
+				stiffness: 400,
+				damping: 40,
+			},
+		});
+	}, [skill, controls]);
+
+	let skillSection: undefined | React.ReactNode;
 	let border = 'transparent';
 	switch (skill) {
 		case Skill.NODE:
-			skillSection = <h3>nodejs</h3>;
+			skillSection = (
+				<motion.h3>
+					Node, especially when combined with{' '}
+					<span style={{ color: '#90c53f' }}>TypeScript</span>, is my language
+					of choice for <span style={{ color: '#90c53f' }}>web servers</span>{' '}
+					using <u>Express</u>. I've been using it for about{' '}
+					<span style={{ color: '#90c53f' }}>2 years</span> now, and I'd call
+					myself <span style={{ color: '#90c53f' }}>proficient</span>.
+				</motion.h3>
+			);
 			border = '#90c53f';
 			break;
 		case Skill.REACT:
-			skillSection = <h3>react</h3>;
+			skillSection = (
+				<motion.h3>
+					React (and React Native), Facebooks's library for creating
+					cross-platform (<span style={{ color: '#5ec9f8' }}>iOS</span> and{' '}
+					<span style={{ color: '#5ec9f8' }}>Android</span>){' '}
+					<span style={{ color: '#5ec9f8' }}>mobile</span> and{' '}
+					<span style={{ color: '#5ec9f8' }}>web apps</span>, is my favorite
+					langauge to work in. I've created multiple apps (a few public and
+					mostly private) over the{' '}
+					<span style={{ color: '#5ec9f8' }}>2 years</span> I've used it and
+					would say I'm <span style={{ color: '#5ec9f8' }}>proficient</span>.
+				</motion.h3>
+			);
 			border = '#5ec9f8';
 			break;
 		case Skill.GRAPHQL:
-			skillSection = <h3>graphql</h3>;
+			skillSection = (
+				<motion.h3>
+					GraphQL, Facebook's query language for creating{' '}
+					<span style={{ color: '#e535ab' }}>dynamic APIs</span>, is now my
+					preferred way (over REST) to build and consume APIs along with{' '}
+					<span style={{ color: '#e535ab' }}>Apollo Server</span>. I've used it
+					for almost <span style={{ color: '#e535ab' }}>1 year</span> now, and
+					I'm still learning new things about it, but I'm{' '}
+					<span style={{ color: '#e535ab' }}>intermediate</span> overall.
+				</motion.h3>
+			);
 			border = '#e535ab';
 			break;
 		case Skill.OTHER:
-			skillSection = <h3>python, java, c#</h3>;
+			skillSection = (
+				<motion.h3>
+					I've also worked in{' '}
+					<span style={{ color: '#9158f1' }}>.NET (C#)</span>,{' '}
+					<span style={{ color: '#9158f1' }}>Java</span>, and a bit of{' '}
+					<span style={{ color: '#9158f1' }}>Python</span>. And I mostly use{' '}
+					<span style={{ color: '#9158f1' }}>Linux (WSL)</span> for my
+					development environment and{' '}
+					<span style={{ color: '#9158f1' }}>PostgreSQL</span> as my go-to
+					database.
+				</motion.h3>
+			);
 			border = '#9158f1';
 			break;
 	}
@@ -56,14 +114,17 @@ export const App: React.FC = () => {
 	return (
 		<>
 			<div className="main-container">
-				<h1 style={{ marginBottom: 0 }}>
-					{'{'} Jared Wyce {'}'}
+				<h1 style={{ marginBottom: 0, display: 'flex' }}>
+					<span>{'{'}</span>
+					<span className="name">Jared Wyce</span>
+					<span style={{ marginLeft: '12px' }}>{'}'}</span>
 				</h1>
 				<h2 style={{ marginTop: 0, marginBottom: 0 }}>
-					I'm a {age.toString().substr(0, 12)} year-old developer
+					I'm a software engineer, professionally developing for{' '}
+					{age.toString().substr(0, 12)} years
 				</h2>
 				<h2 style={{ marginTop: 0 }}>
-					who uses{' '}
+					using technology like{' '}
 					<span
 						className="d"
 						style={{ color: '#90c53f' }}
@@ -161,7 +222,7 @@ export const App: React.FC = () => {
 					<div
 						className="project-image"
 						onClick={() =>
-							window.open('https://github.com/jwyce/2x2x2-Rubik-Solver')
+							window.open('https://github.com/jwyce/portfolio/tree/master')
 						}
 						style={{
 							cursor: 'pointer',
@@ -172,12 +233,13 @@ export const App: React.FC = () => {
 					<span className="project-title">Portfolio</span>
 				</div>
 			</div>
-			<div
+			<motion.div
+				animate={controls}
 				className="skill-container"
 				style={{ border: `solid 3px ${border}` }}
 			>
 				{skillSection}
-			</div>
+			</motion.div>
 		</>
 	);
 };

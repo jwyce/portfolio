@@ -110,6 +110,26 @@ a:hover::before {
 .skill-container {
 	text-align: center;
 	margin: 5em;
-	padding: 5em;
+	padding: 5em 15em;
 	border-radius: 1em;
+}
+
+.main-container span.name::before {
+	content: '';
+	width: 10px;
+	height: 25px;
+	background: white;
+	display: inline-block;
+	animation: cursor-blink 1s steps(2) infinite;
+}
+h1 span.name {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+@keyframes cursor-blink {
+	0% {
+		opacity: 0;
+	}
 }
