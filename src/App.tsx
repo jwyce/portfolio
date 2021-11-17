@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 import koiImage from './assets/koi.png';
-import portfolioImage from './assets/portfolio.svg';
+import portfolioImage from './assets/portfolio.png';
 import rubikImage from './assets/rubik.svg';
 
 const YEAR_MILLIS = 1000 * 60 * 60 * 24 * 365;
