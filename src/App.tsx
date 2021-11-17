@@ -120,7 +120,7 @@ export const App: React.FC = () => {
 					<span style={{ marginLeft: '12px' }}>{'}'}</span>
 				</h1>
 				<h2 style={{ marginTop: 0, marginBottom: 0 }}>
-					I'm a software engineer, professionally developing for{' '}
+					I'm a software engineer, developing professionally for{' '}
 					{age.toString().substr(0, 12)} years
 				</h2>
 				<h2 style={{ marginTop: 0 }}>
