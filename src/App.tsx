@@ -20,13 +20,13 @@ enum Skill {
 
 export const App: React.FC = () => {
 	const [age, setAge] = useState(
-		dayjs().diff(dayjs('2019-06-10', 'year', true)) / YEAR_MILLIS
+		dayjs().diff(dayjs('2020-02-10', 'year', true)) / YEAR_MILLIS
 	);
 	const [skill, setSkill] = useState(Skill.NONE);
 	const controls = useAnimation();
 
 	const refreshAge = () => {
-		setAge(dayjs().diff(dayjs('2019-06-10', 'year', true)) / YEAR_MILLIS);
+		setAge(dayjs().diff(dayjs('2020-02-10', 'year', true)) / YEAR_MILLIS);
 	};
 
 	useEffect(() => {
