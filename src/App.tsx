@@ -30,7 +30,7 @@ export const App: React.FC = () => {
 	};
 
 	useEffect(() => {
-		const timerId = setInterval(refreshAge, 100);
+		const timerId = setInterval(refreshAge, 50);
 		return function cleanup() {
 			clearInterval(timerId);
 		};
