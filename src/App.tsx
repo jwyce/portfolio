@@ -196,7 +196,7 @@ export const App: React.FC = () => {
 				<div className="project">
 					<div
 						className="project-image"
-						onClick={() => window.open('https://github.com/jwyce/koi-anime')}
+						onClick={() => window.open('https://www.koianimelist.com/')}
 						style={{
 							cursor: 'pointer',
 							backgroundImage: `url(${koiImage})`,
