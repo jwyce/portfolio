@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
-// import koiImage from './assets/koi.png';
+import koiImage from './assets/koi.png';
 import portfolioImage from './assets/portfolio.png';
 import rubikImage from './assets/rubik.svg';
 
