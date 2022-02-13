@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
-import koiImage from './assets/koi.png';
+// import koiImage from './assets/koi.png';
 import portfolioImage from './assets/portfolio.png';
 import rubikImage from './assets/rubik.svg';
 
@@ -193,7 +193,7 @@ export const App: React.FC = () => {
 					/>
 					<span className="project-title">Gungi.io</span>
 				</div>
-				<div className="project">
+				{/* <div className="project">
 					<div
 						className="project-image"
 						onClick={() => window.open('https://www.koianimelist.com/')}
@@ -203,7 +203,7 @@ export const App: React.FC = () => {
 						}}
 					/>
 					<span className="project-title">Koi Anime (WIP)</span>
-				</div>
+				</div> */}
 				<div className="project">
 					<div
 						className="project-image"
