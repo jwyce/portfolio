@@ -239,7 +239,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://www.jetbrains.com/datagrip/"
-						url="https://cdn.icon-icons.com/icons2/3053/PNG/512/intellij_datagrip_macos_bigsur_icon_190058.png"
+						url="https://resources.jetbrains.com/storage/products/datagrip/img/meta/datagrip_logo_300x300.png"
 						name="Datagrip"
 					/>
 					<TechStackItem
