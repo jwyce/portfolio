@@ -184,7 +184,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://www.datadoghq.com/"
-						url="https://imgix.datadoghq.com/img/favicons/apple-touch-icon.png"
+						url="//upload.wikimedia.org/wikipedia/en/thumb/7/7e/Datadog_logo.svg/220px-Datadog_logo.svg.png"
 						name="Datadog"
 					/>
 					<TechStackItem
