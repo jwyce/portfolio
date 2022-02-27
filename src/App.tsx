@@ -15,9 +15,9 @@ import { getColor } from './utils/getColor';
 const YEAR_MILLIS = 1000 * 60 * 60 * 24 * 365;
 
 export enum Skill {
-	NODE = 'node',
-	REACT = 'react',
-	GRAPHQL = 'graphql',
+	BACKEND = 'backend',
+	FRONTEND = 'frontend',
+	DEVOPS = 'devops',
 	OTHER = 'other',
 	NONE = 'none',
 }
@@ -62,40 +62,42 @@ export const App: React.FC = () => {
 				</h1>
 				<h2 style={{ marginTop: 0, marginBottom: 0 }}>
 					I'm a software engineer, developing professionally for{' '}
-					{age.toString().substring(0, 12)} years
+					{age.toString().substring(0, 12)} years.
 				</h2>
 				<h2 style={{ marginTop: 0 }}>
-					using technology like{' '}
+					My Tech Stack:{' '}
 					<TechLabel
-						title="Node.JS"
-						type={Skill.NODE}
+						title="Backend"
+						type={Skill.BACKEND}
 						callback={() =>
-							skill === Skill.NODE ? setSkill(Skill.NONE) : setSkill(Skill.NODE)
+							skill === Skill.BACKEND
+								? setSkill(Skill.NONE)
+								: setSkill(Skill.BACKEND)
 						}
 					/>
 					,{' '}
 					<TechLabel
-						title="React"
-						type={Skill.REACT}
+						title="Frontend"
+						type={Skill.FRONTEND}
 						callback={() =>
-							skill === Skill.REACT
+							skill === Skill.FRONTEND
 								? setSkill(Skill.NONE)
-								: setSkill(Skill.REACT)
+								: setSkill(Skill.FRONTEND)
 						}
 					/>
 					,{' '}
 					<TechLabel
-						title="GraphQL"
-						type={Skill.GRAPHQL}
+						title="DevOps"
+						type={Skill.DEVOPS}
 						callback={() =>
-							skill === Skill.GRAPHQL
+							skill === Skill.DEVOPS
 								? setSkill(Skill.NONE)
-								: setSkill(Skill.GRAPHQL)
+								: setSkill(Skill.DEVOPS)
 						}
 					/>
 					, and{' '}
 					<TechLabel
-						title="others"
+						title="Others"
 						type={Skill.OTHER}
 						callback={() =>
 							skill === Skill.OTHER
@@ -121,10 +123,16 @@ export const App: React.FC = () => {
 					image='url("https://raw.githubusercontent.com/jwyce/gungi.io/master/client/public/images/apple-touch-icon.png")'
 				/>
 				<Project
+					title="Who's That Pokémon?"
+					url="https://whos-that-pokemon-amber.vercel.app/"
+					image='url("https://raw.githubusercontent.com/jwyce/whos-that-pokemon/master/public/favicon.svg")'
+					bg="#471010"
+				/>
+				<Project
 					title="2x2x2 Rubik Solver"
 					url="https://github.com/jwyce/2x2x2-Rubik-Solver"
 					image={`url(${rubikImage})`}
-					bg="#472210"
+					bg="#425b80"
 				/>
 				<Project
 					title="Portfolio"
