@@ -193,7 +193,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Docker"
 					/>
 					<TechStackItem
-						href="aws.amazon.com"
+						href="https://aws.amazon.com"
 						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_aws.svg"
 						name="AWS"
 					/>
@@ -228,13 +228,8 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Turborepo"
 					/>
 					<TechStackItem
-						href="https://gitmoji.dev/"
-						url="https://gitmoji.dev/static/apple-icon-180x180.png"
-						name="Gitmoji"
-					/>
-					<TechStackItem
 						href="https://insomnia.rest/"
-						url="https://insomnia.rest/favicon.ico"
+						url="https://seeklogo.com/images/I/insomnia-logo-A35E09EB19-seeklogo.com.png"
 						name="Insomnia"
 					/>
 					<TechStackItem
