@@ -38,6 +38,11 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="C#"
 					/>
 					<TechStackItem
+						href="https://www.python.org/"
+						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_python.svg"
+						name="Python"
+					/>
+					<TechStackItem
 						href="https://trpc.io/"
 						url="https://camo.githubusercontent.com/a7595afbaba8729f686ca2ee06c266505aa82c5dd81bb5b369a27bfbbcc49927/68747470733a2f2f747270632e696f2f696d672f6c6f676f2d6e6f2d746578742e737667"
 						name="tRPC"
