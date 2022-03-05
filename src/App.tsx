@@ -15,10 +15,10 @@ import { getColor } from './utils/getColor';
 const YEAR_MILLIS = 1000 * 60 * 60 * 24 * 365;
 
 export enum Skill {
-	BACKEND = 'backend',
-	FRONTEND = 'frontend',
-	DEVOPS = 'devops',
-	OTHER = 'other',
+	GREAT = 'great',
+	GOOD = 'good',
+	LIKE = 'like',
+	STACK = 'stack',
 	NONE = 'none',
 }
 
@@ -60,52 +60,51 @@ export const App: React.FC = () => {
 					<span className="name">Jared Wyce</span>
 					<span style={{ marginLeft: '12px' }}>{'}'}</span>
 				</h1>
-				<h2 style={{ marginTop: 0, marginBottom: 0 }}>
-					I'm a software engineer, developing professionally for{' '}
-					{age.toString().substring(0, 12)} years.
+				<h2 style={{ marginTop: 0, marginBottom: 0, textAlign: 'center' }}>
+					Software engineer with {age.toString().substring(0, 12)} years
+					industry experience.
+					<br />
 				</h2>
-				<h2 style={{ marginTop: 0 }}>
-					My Tech Stack:{' '}
+				<h3 style={{ color: '#bbbbbb', marginTop: 0 }}>
+					React + Typescript nerd, lover of simple things that solve complex
+					things.
+				</h3>
+				<h2 style={{ marginTop: '0.5em' }}>
 					<TechLabel
-						title="Backend"
-						type={Skill.BACKEND}
+						title="Things I'm great at"
+						type={Skill.GREAT}
 						callback={() =>
-							skill === Skill.BACKEND
+							skill === Skill.GREAT
 								? setSkill(Skill.NONE)
-								: setSkill(Skill.BACKEND)
+								: setSkill(Skill.GREAT)
 						}
 					/>
-					,{' '}
+					{' | '}
 					<TechLabel
-						title="Frontend"
-						type={Skill.FRONTEND}
+						title="Things I'm good at"
+						type={Skill.GOOD}
 						callback={() =>
-							skill === Skill.FRONTEND
-								? setSkill(Skill.NONE)
-								: setSkill(Skill.FRONTEND)
+							skill === Skill.GOOD ? setSkill(Skill.NONE) : setSkill(Skill.GOOD)
 						}
 					/>
-					,{' '}
+					{' | '}
 					<TechLabel
-						title="DevOps"
-						type={Skill.DEVOPS}
+						title="Things I like"
+						type={Skill.LIKE}
 						callback={() =>
-							skill === Skill.DEVOPS
-								? setSkill(Skill.NONE)
-								: setSkill(Skill.DEVOPS)
+							skill === Skill.LIKE ? setSkill(Skill.NONE) : setSkill(Skill.LIKE)
 						}
 					/>
-					, and{' '}
+					{' | '}
 					<TechLabel
-						title="Others"
-						type={Skill.OTHER}
+						title="My current stack"
+						type={Skill.STACK}
 						callback={() =>
-							skill === Skill.OTHER
+							skill === Skill.STACK
 								? setSkill(Skill.NONE)
-								: setSkill(Skill.OTHER)
+								: setSkill(Skill.STACK)
 						}
 					/>
-					.
 				</h2>
 
 				<h2 style={{ marginBottom: 0 }}>

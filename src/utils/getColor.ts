@@ -2,13 +2,13 @@ import { Skill } from 'src/App';
 
 export const getColor = (skill: Skill) => {
 	switch (skill) {
-		case Skill.DEVOPS:
+		case Skill.LIKE:
 			return '#e535ab';
-		case Skill.OTHER:
+		case Skill.STACK:
 			return '#9158f1';
-		case Skill.FRONTEND:
+		case Skill.GOOD:
 			return '#61dafb';
-		case Skill.BACKEND:
+		case Skill.GREAT:
 			return '#90c53f';
 	}
 	return 'transparent';
