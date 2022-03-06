@@ -63,19 +63,19 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Expo"
 					/>
 					<TechStackItem
+						href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_css.svg"
+						name="CSS"
+					/>
+					<TechStackItem
+						href="https://www.docker.com/"
+						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_docker2.svg"
+						name="Docker"
+					/>
+					<TechStackItem
 						href="https://socket.io/"
 						url="https://camo.githubusercontent.com/07aa2b658522a1484d90bade21c57204955c2d64a307f5366108e13800ed7f5d/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f392f39362f536f636b65742d696f2e737667"
 						name="Socket.io"
-					/>
-					<TechStackItem
-						href="https://github.com/vim/vim"
-						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_vim.svg"
-						name="Vim"
-					/>
-					<TechStackItem
-						href="https://fishshell.com/"
-						url="https://user-images.githubusercontent.com/920838/47597523-5614b000-d944-11e8-88e2-3de62d581ec2.gif"
-						name="Fish Shell"
 					/>
 					<TechStackItem
 						href="https://jestjs.io/"
@@ -83,9 +83,9 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Jest"
 					/>
 					<TechStackItem
-						href="https://www.docker.com/"
-						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_docker2.svg"
-						name="Docker"
+						href="https://github.com/vim/vim"
+						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_vim.svg"
+						name="Vim"
 					/>
 				</motion.div>
 			);
@@ -169,7 +169,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://planetscale.com/"
-						url="https://planetscale.com/favicon.svg"
+						url="/pscale.svg"
 						name="PlanetScale"
 					/>
 					<TechStackItem
@@ -184,7 +184,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://pusher.com/"
-						url="https://avatars.githubusercontent.com/u/739550?s=200&v=4"
+						url="https://pusher.com/favicon-196x196.png"
 						name="Pusher"
 					/>
 					<TechStackItem
