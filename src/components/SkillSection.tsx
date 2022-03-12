@@ -34,7 +34,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://www.apollographql.com/"
-						url="https://avatars.githubusercontent.com/u/17189275?s=200&v=4"
+						url="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/eddd21641e769b1d4d8974834fb75166038b2e52/icons/apollo.svg"
 						name="Apollo"
 					/>
 					<TechStackItem
@@ -69,7 +69,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://www.docker.com/"
-						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_docker2.svg"
+						url="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/eddd21641e769b1d4d8974834fb75166038b2e52/icons/docker.svg"
 						name="Docker"
 					/>
 					<TechStackItem
@@ -159,12 +159,12 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://nextjs.org/"
-						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_next.svg"
+						url="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/eddd21641e769b1d4d8974834fb75166038b2e52/icons/next.svg"
 						name="Next.js"
 					/>
 					<TechStackItem
 						href="https://www.prisma.io/"
-						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_prisma.svg"
+						url="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/eddd21641e769b1d4d8974834fb75166038b2e52/icons/prisma.svg"
 						name="Prisma"
 					/>
 					<TechStackItem
