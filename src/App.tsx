@@ -122,10 +122,10 @@ export const App: React.FC = () => {
 					image='url("https://raw.githubusercontent.com/jwyce/gungi.io/master/client/public/images/apple-touch-icon.png")'
 				/>
 				<Project
-					title="Who's That Pokémon?"
-					url="https://whos-that-pokemon-amber.vercel.app/"
-					image='url("https://raw.githubusercontent.com/jwyce/whos-that-pokemon/master/public/favicon.svg")'
-					bg="#471010"
+					title="Favorite Auto Pet"
+					url="https://favorite-pet.vercel.app/"
+					image='url("https://raw.githubusercontent.com/jwyce/favorite-pet/main/public/pet-octopus.png")'
+					bg="#26b1a5"
 				/>
 				<Project
 					title="2x2x2 Rubik Solver"
