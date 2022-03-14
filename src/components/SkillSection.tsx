@@ -103,9 +103,9 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Rust"
 					/>
 					<TechStackItem
-						href="https://www.python.org/"
-						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_python.svg"
-						name="Python"
+						href="https://tauri.studio/"
+						url="https://raw.githubusercontent.com/tauri-apps/tauri/HEAD/app-icon.png"
+						name="Tauri"
 					/>
 					<TechStackItem
 						href="https://deno.land/"
