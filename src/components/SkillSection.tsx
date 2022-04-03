@@ -115,7 +115,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					<TechStackItem
 						href="https://www.solidjs.com/"
 						url="https://www.solidjs.com/assets/logo.123b04bc.svg"
-						name="Solid.js"
+						name="Solid"
 					/>
 					<TechStackItem
 						href="https://www.cypress.io/"
@@ -160,7 +160,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					<TechStackItem
 						href="https://nextjs.org/"
 						url="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/eddd21641e769b1d4d8974834fb75166038b2e52/icons/next.svg"
-						name="Next.js"
+						name="Next"
 					/>
 					<TechStackItem
 						href="https://www.prisma.io/"
