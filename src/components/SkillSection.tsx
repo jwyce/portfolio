@@ -98,7 +98,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Elixir"
 					/>
 					<TechStackItem
-						href="https://www.rust-lang.org/"
+						href="https://doc.rust-lang.org/book/title-page.html"
 						url="https://rustacean.net/assets/rustacean-orig-noshadow.svg"
 						name="Rust"
 					/>
@@ -191,11 +191,6 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						href="https://vercel.com/home"
 						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_zeit.svg"
 						name="Vercel"
-					/>
-					<TechStackItem
-						href="https://railway.app/"
-						url="https://railway.app/favicon-96x96.png"
-						name="Railway"
 					/>
 					<TechStackItem
 						href="https://turborepo.org/"
