@@ -83,7 +83,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 						name="Jest"
 					/>
 					<TechStackItem
-						href="https://github.com/vim/vim"
+						href="https://neovim.io/"
 						url="https://github.com/vscode-icons/vscode-icons/raw/master/icons/file_type_vim.svg"
 						name="Vim"
 					/>
