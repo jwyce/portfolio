@@ -139,7 +139,7 @@ export const SkillSection: React.FC<SkillProps> = ({ skill }) => {
 					/>
 					<TechStackItem
 						href="https://nextjs.org/"
-						url="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_next.svg"
+						url="https://pbs.twimg.com/profile_images/1468045715083509767/JrehsCpb_400x400.png"
 						name="Next.js"
 					/>
 					<TechStackItem
